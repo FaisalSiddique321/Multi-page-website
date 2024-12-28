@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 
 const Glasses = () => {
@@ -16,7 +17,7 @@ const GlassesData = [
       <div className="glasses">
         {GlassesData.map((Glasses) =>(
             <div key={Glasses.id} className="glasses-card">
-                <img src={Glasses.Image} alt={Glasses.name} />
+                <Image src={Glasses.Image} alt={Glasses.name} />
                 <h3>{Glasses.name}</h3>
                 <p>{Glasses.description}</p>
                 <div className='price'>${Glasses.price}</div>
